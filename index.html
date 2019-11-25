@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<!--
+    Based on the template: Parallelism by HTML5 UP html5up.net | @n33co | Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    -->
+<html>
+
+    <head>
+        <title>Live Notebooks for Seismology</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript>
+            <link rel="stylesheet" href="assets/css/noscript.css" />
+        </noscript>
+        <!--[if lte IE 8]>
+        <link rel="stylesheet" href="assets/css/ie8.css" />
+        <![endif]-->
+        <!--[if lte IE 9]>
+        <link rel="stylesheet" href="assets/css/ie9.css" />
+        <![endif]-->
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <div id="main">
+                <div id="reel">
+                    <!-- Header Item -->
+                    <div id="header" class="item" data-width="400">
+                        <div class="inner">
+                            <h1>Seismo-Live</h1>
+                            <p>Live Jupyter Notebooks<br />
+                                for Seismology
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Help item -->
+                    <a data-toggle="modal" data-target=".help-modal">
+                        <article class="item thumb" data-width="282" style="background-color:#EF8824">
+                            <h2>Help - What is this?</h2>
+                            <img src="images/help.jpg" alt="">
+                        </article>
+                    </a>
+
+                    <!-- Launch notebooks item -->
+                    <a href="./tree/index.html">
+                    <article class="item thumb" id="launch_article" data-width="230" style="background-color:#437414;">
+                        <h2>View Notebooks</h2>
+                            <div id="status" style="color:white !important">
+                                View Jupyter Notebooks
+                                <div style="font-size: x-small; line-height: 2.2ex; font-style:italic; padding-top: 10px">
+                                    Click here to view the Jupyter notebooks.
+                                    You can view pre-rendered ones, download
+                                    them to run locally or run them online.
+                                </div>
+                            </div>
+                    </article>
+                    </a>
+
+                    <!-- More information item -->
+                    <a href="#" data-toggle="modal" data-target=".info-modal">
+                        <article class="item thumb" data-width="282" style="background-color:#850A8B">
+                            <h2>More Information</h2>
+                            <img src="images/information.jpg" alt="">
+                        </article>
+                    </a>
+
+                    <article class="item thumb" data-width="384">
+                        <h2>ObsPy</h2>
+                        <a target="_blank" href="http://obspy.org"><img src="images/obspy.jpg" alt=""></a>
+                    </article>
+                    <article class="item thumb" data-width="282">
+                        <h2>ASDF</h2>
+                        <a target="_blank" href="http://seismic-data.org">
+                            <img src="images/asdf.jpg" alt="">
+                        </a>
+                    </article>
+                    <article class="item thumb" data-width="384">
+                        <h2>Instaseis</h2>
+                        <a target="_blank" href="http://instaseis.net"><img src="images/instaseis.jpg" alt=""></a>
+                    </article>
+                    <article class="item thumb" data-width="274">
+                        <h2>Computational Seismology</h2>
+                        <a target="_blank" href="http://www.computational-seismology.org/"><img src="images/computational_seismology.jpg" alt=""></a>
+                    </article>
+                </div>
+            </div>
+
+            <div id="footer">
+                <div class="right">
+                    <ul class="contact">
+                        <li>
+                            <a target="_blank" href="https://github.com/krischer/seismo_live" class="icon fa-github"><span class="label">GitHub</span></a>
+                        </li>
+                    </ul>
+                    <ul class="copyright">
+                        <li>
+                            Except where otherwise noted, content on this site is licensed under a
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> License.
+                            &copy; 2015-2019 Lion Krischer.
+                        </li>
+                        <li>
+                            Design based on a template from <a href="http://html5up.net">HTML5 UP</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade help-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h2 class="modal-title">What am I looking at?</h2>
+                    </div>
+                    <div class="modal-content">
+                        <div class="row">
+                            Seismo-Live is an interactive online learning
+                            platform for seismology. It utilizes
+                            <a target="_blank" href="http://jupyter.org/">Jupyter Notebooks</a>.
+                        </div>
+
+                        <div class="row" style="padding-bottom: 10px">
+                            <h2>Getting Started</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                Most links on the front page lead to tools and
+                                projects that are used on Seismo-Live. The
+                                glowing green button will launch a light-weight
+                                remote virtual machine with ready to use
+                                interactive notebooks. Click on it to get started.
+                            </div>
+                            <div class="col-md-6">
+                                <img class="img-responsive" src="images/which_button_to_click.jpg"></img>
+                            </div>
+                        </div>
+
+                        <div class="row" style="padding-top: 10px; padding-bottom: 10px">
+                            <h2 style="text-align:right">Jupyter Notebook Overview</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img class="img-responsive" src="images/notebook_overview.jpg"></img>
+                            </div>
+                            <div class="col-md-6">
+                                Once you clicked the green button, an overview
+                                of all available notebooks will be shown in a
+                                new tab. Choose any. If you have never seen
+                                this before, the <b>Python Courses</b> ones
+                                also contains a quick introduction on how to
+                                use the notebooks.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="alert alert-success" style="margin-top: 10px">
+                                There is also some <a target="_blank" href="http://nbviewer.jupyter.org/github/jupyter/notebook/blob/master/docs/source/examples/Notebook/Notebook%20Basics.ipynb">
+                                official documentation</a> on how to use the notebooks and lots of tutorials can be found in the internet.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade launch-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h2 class="modal-title">Launch</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade info-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h2 class="modal-title">More Information</h2>
+                    </div>
+                    <div class="modal-content">
+                        <div class="row">
+                            <h2>Mission Statement</h2>
+                            <p>
+                                Seismo-Live aims to collect all kinds of
+                                digital learning resources for seismology and
+                                offer them via this portal here. We currently
+                                have Jupyter notebooks but we plan to extend
+                                this with more detailed texts and videos.
+                            </p>
+                            <p>
+                                Many institutes and labs have their own
+                                learning resources. Seismo-Live enables them to
+                                be shared with the whole community to the
+                                benefit of all.
+                            </p>
+                        </div>
+                        <div class="row">
+                            <h2>Installing it on your own Machine</h2>
+                            As the notebooks on Seismo-Live are not persistent
+                            it might be of interest to install them on your own
+                            machine. See
+                            <a target="_blank" href="https://github.com/krischer/seismo_live#local-installation">here</a>
+                            for up-to-date installation instructions.
+                        </div>
+                        <div class="row">
+                            <h2>Contributing</h2>
+                            You can contribute via the project's
+                            <a target="_blank" href="https://github.com/krischer/seismo_live">Github page</a>.
+                            All notebooks currently are based on Python but
+                            that is not a requirement of the platform - we can
+                            accommodate tutorials and resources written in any
+                            open-source programming language (no Matlab and SAC
+                            - sorry - but for example Octave would work) as
+                            long as the computational and data requirements are
+                            fairly small.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="assets/js/skel.min.js"></script>
+        <script src="assets/js/skel-viewport.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+        <script src="assets/js/main.js"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-44800463-3', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>
