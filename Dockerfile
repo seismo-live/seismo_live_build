@@ -7,4 +7,5 @@
 # caches the old base image and uses that.
 # Use the hash tag last used in `make build` for base image, as output after
 # running that build
-FROM obspy/seismo-live:8d7a0f6a84f7a5
+#FROM obspy/seismo-live:8d7a0f6a84f7a5 #old file from 2019
+FROM christadler/seismo-live:a211566746d7 #new dockerimage, still with whitespaces
