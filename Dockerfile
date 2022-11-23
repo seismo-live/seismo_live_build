@@ -8,5 +8,5 @@
 # Use the hash tag last used in `make build` for base image, as output after
 # running that build
 #FROM obspy/seismo-live:8d7a0f6a84f7a5 #old file from 2019
-#new dockerimage, still with whitespaces in directory names
-FROM christadler/seismo-live:a211566746d7
+# latest dockerimage 
+FROM christadler/seismo-live:main-20221122a
